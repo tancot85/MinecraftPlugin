@@ -1,0 +1,4 @@
+name: Recipie
+version: '${project.version}'
+main: recipie.recipie.Recipie
+api-version: 1.19
