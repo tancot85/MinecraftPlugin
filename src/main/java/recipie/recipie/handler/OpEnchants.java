@@ -90,27 +90,27 @@ public class OpEnchants {
             case 2:
                 this.lootingBlockBonusLevel=2;
                 this.damageAllLevel = 4;
-                this.sweepingEdgeLevel=1;
+                this.digSpeedLevel=3;
                 break;
             case 3:
                 this.lootingBlockBonusLevel=3;
                 this.damageAllLevel = 4;
-                this.digSpeedLevel=2;
+                this.digSpeedLevel=4;
                 break;
             case 4:
                 this.lootingBlockBonusLevel=3;
                 this.damageAllLevel = 5;
-                this.digSpeedLevel=2;
+                this.digSpeedLevel=5;
                 break;
             case 5:
                 this.lootingBlockBonusLevel=4;
                 this.damageAllLevel = 6;
-                this.digSpeedLevel=3;
+                this.digSpeedLevel=6;
                 break;
             case 6:
                 this.lootingBlockBonusLevel=4;
                 this.damageAllLevel = 7;
-                this.digSpeedLevel=3;
+                this.digSpeedLevel=7;
                 break;
             default:
                 break;
