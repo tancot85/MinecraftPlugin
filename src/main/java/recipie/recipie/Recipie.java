@@ -3,6 +3,7 @@ package recipie.recipie;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import recipie.recipie.handler.OpEnchants;
+import recipie.recipie.handler.OpRootedDirt;
 
 public final class Recipie extends JavaPlugin {
 
@@ -12,6 +13,7 @@ public final class Recipie extends JavaPlugin {
         Bukkit.getLogger().info("hello there");
         OpEnchants opEnchants = new OpEnchants();
         opEnchants.init();
+        new OpRootedDirt(this);
     }
 
     @Override

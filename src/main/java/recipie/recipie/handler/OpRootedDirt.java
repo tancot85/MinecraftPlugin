@@ -20,10 +20,14 @@ public class OpRootedDirt implements Listener {
 
     @EventHandler
     public void onRootedBlockBreak(BlockBreakEvent event){
+        Block block = event.getBlock();
+        if(block.getType() != Material.ROOTED_DIRT)
+            return;
         Random random = new Random();
         ItemStack stack = new ItemStack(Material.DIAMOND,2);
         int randomNumber = random.nextInt(100);
-        if(randomNumber<10 && randomNumber>0){
+        Bukkit.broadcastMessage("Random number generated is: "+randomNumber);
+        if(randomNumber<10 && randomNumber>=0){
             int n = random.nextInt(3);
             stack = new ItemStack(Material.NETHERITE_INGOT,n);
         }
@@ -36,9 +40,7 @@ public class OpRootedDirt implements Listener {
             stack = new ItemStack(Material.DIAMOND,n);
         }
 
-        Block block = event.getBlock();
-        if(block.getType() != Material.ROOTED_DIRT)
-            return;
+
         block.setType(Material.AIR);
         block.getWorld().dropItemNaturally(block.getLocation(),stack);
     }

@@ -76,7 +76,6 @@ public class OpEnchants {
         sr.addIngredient(Material.AMETHYST_SHARD);
         sr.addIngredient(Material.NETHER_WART);
         sr.addIngredient(Material.BLAZE_ROD);
-        sr.addIngredient(Material.WITHER_ROSE);
         Bukkit.getServer().addRecipe(sr);
     }
 
@@ -137,7 +136,6 @@ public class OpEnchants {
         sr.addIngredient(Material.AMETHYST_SHARD);
         sr.addIngredient(Material.NETHER_WART);
         sr.addIngredient(Material.BLAZE_ROD);
-        sr.addIngredient(Material.WITHER_ROSE);
         Bukkit.getServer().addRecipe(sr);
     }
 
